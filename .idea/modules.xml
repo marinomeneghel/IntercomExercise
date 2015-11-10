@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayUtils/ArrayUtils.iml" filepath="$PROJECT_DIR$/ArrayUtils/ArrayUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomerSelector/CustomerSelector.iml" filepath="$PROJECT_DIR$/CustomerSelector/CustomerSelector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntercomExercise.iml" filepath="$PROJECT_DIR$/IntercomExercise.iml" />
+    </modules>
+  </component>
+</project>
