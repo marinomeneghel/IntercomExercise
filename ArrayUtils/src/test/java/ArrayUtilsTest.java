@@ -19,6 +19,11 @@ public class ArrayUtilsTest {
         arrayUtils = new ArrayUtils();
     }
 
+    /* ************************************
+     * Array reduction tests
+     *
+     */
+
     @Test
     public void testNullArray() {
         int[][] array = null;
@@ -28,7 +33,7 @@ public class ArrayUtilsTest {
     }
 
     @Test
-    public void testEmpityArray() {
+    public void testEmptyArray() {
         int[][] array = new int[][] {};
         arrayUtils.reduce(array);
 
@@ -67,10 +72,10 @@ public class ArrayUtilsTest {
         List arrayList = new ArrayList();
         arrayList.add(Arrays.asList(1, 2, Arrays.asList(3,4)));
         arrayList.add(5);
-        arrayList.add(Arrays.asList(6, Arrays.asList(7)));
+        arrayList.add(Arrays.asList(6, Arrays.asList(7, 8)));
 
         arrayUtils.reduce(arrayList);
-        List expected = new ArrayList(Arrays.asList(1,2,3,4,5,6,7));
+        List expected = new ArrayList(Arrays.asList(1,2,3,4,5,6,7,8));
         assertEquals(expected, arrayUtils.reducedArray);
     }
 
@@ -88,5 +93,26 @@ public class ArrayUtilsTest {
     }
 
 
+    /* ************************************
+     * Even - odds tests
+     *
+     */
+
+    @Test
+    public void testFindOdds() {
+        List<Integer> numbers = Arrays.asList(2, 3, 2, 3, 8, 7, 7);
+        System.out.println(numbers);
+
+        int result = arrayUtils.findOdds(numbers);
+        assertEquals(8, result);
+    }
 
 }
+
+
+
+
+
+
+
+
