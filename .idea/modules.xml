@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArrayUtils/ArrayUtils.iml" filepath="$PROJECT_DIR$/ArrayUtils/ArrayUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomerSelector/CustomerSelector.iml" filepath="$PROJECT_DIR$/CustomerSelector/CustomerSelector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/IntercomExercise.iml" filepath="$PROJECT_DIR$/IntercomExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KataExercises.iml" filepath="$PROJECT_DIR$/KataExercises.iml" />
     </modules>
   </component>
 </project>
