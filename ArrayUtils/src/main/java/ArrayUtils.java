@@ -84,4 +84,26 @@ public class ArrayUtils {
         return occourrencies;
     }
 
+    /**
+     * TODO first version, to refactor
+     * Fold an array summing the elements
+     * Sums the first with every other element in the array and then remove it.
+     * This operation is recursive for every array item
+     * eg: [1,4,7] => [5, 8] => [13] => return 13
+     * @param input the array to fold
+     * @return the final sum as explained above
+     */
+    public int foldArray(List<Integer> input) {
+
+        for(int i=0; i<input.size(); i++) {
+
+            int increment = input.get(i);
+            for(int j=i; j<input.size()-1; j++) {
+                input.set(j+1, input.get(j+1) + increment);
+            }
+        }
+        return input.get(input.size()-1);
+    }
+
+
 }

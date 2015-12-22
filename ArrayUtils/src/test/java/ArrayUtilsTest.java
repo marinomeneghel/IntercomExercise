@@ -107,6 +107,19 @@ public class ArrayUtilsTest {
         assertEquals(8, result);
     }
 
+
+    /* ************************************
+     * Array folding tests
+     *
+     */
+
+    @Test
+    public void testPositiveArrayFolding() {
+        List<Integer> input1 = Arrays.asList(1, 4, 7);
+        int result = arrayUtils.foldArray(input1);
+        assertEquals(13, result);
+    }
+
 }
 
 
