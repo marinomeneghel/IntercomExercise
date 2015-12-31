@@ -120,6 +120,13 @@ public class ArrayUtilsTest {
         assertEquals(13, result);
     }
 
+    @Test
+    public void testArrayFolding() {
+        List<Integer> input1 = Arrays.asList(6, -1, 7, 12);
+        int result = arrayUtils.foldArray(input1);
+        assertEquals(41, result);
+    }
+
 }
 
 

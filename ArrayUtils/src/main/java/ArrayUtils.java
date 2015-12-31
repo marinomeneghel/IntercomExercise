@@ -85,7 +85,7 @@ public class ArrayUtils {
     }
 
     /**
-     * TODO first version, to refactor
+     * TODO first version, to refactor -- ho to improve this?
      * Fold an array summing the elements
      * Sums the first with every other element in the array and then remove it.
      * This operation is recursive for every array item
