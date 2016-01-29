@@ -22,11 +22,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="ArrayUtils" />
         <module name="CustomerSelector" />
+        <module name="KataExercises" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ArrayUtils" target="1.5" />
       <module name="CustomerSelector" target="1.5" />
+      <module name="KataExercises" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
