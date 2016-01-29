@@ -24,7 +24,6 @@
         <processorPath useClasspath="true" />
         <module name="ArrayUtils" />
         <module name="CustomerSelector" />
-        <module name="KataExercises" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
