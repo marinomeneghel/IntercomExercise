@@ -23,6 +23,7 @@
     <modules>
         <module>ArrayUtils</module>
         <module>CustomerSelector</module>
+        <module>RomanNumbers</module>
     </modules>
 
 </project>

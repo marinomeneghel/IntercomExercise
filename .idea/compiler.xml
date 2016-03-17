@@ -24,12 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="ArrayUtils" />
         <module name="CustomerSelector" />
+        <module name="RomanNumbers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ArrayUtils" target="1.5" />
       <module name="CustomerSelector" target="1.5" />
       <module name="KataExercises" target="1.5" />
+      <module name="RomanNumbers" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
