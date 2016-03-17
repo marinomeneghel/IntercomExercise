@@ -16,6 +16,11 @@ public class RomanNumbersTest {
     }
 
     @Test
+    public void test0IsEmpityString() {
+        assertEquals("", romanNumbers.toRoman(0));
+    }
+
+    @Test
     public void testOneIsI() {
         assertEquals("I", romanNumbers.toRoman(1));
     }

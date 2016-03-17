@@ -23,26 +23,19 @@ public class RomanNumbers {
         digitRomanMap.put(1, "I");
     }
 
-    public String toRoman(int num) {
-        StringBuilder strBuilder = new StringBuilder();
+    StringBuilder strBuilder = new StringBuilder();
 
-        int remaining = num;
-        for (Object entryObject : digitRomanMap.entrySet()) {
-            Map.Entry entry = (Map.Entry) entryObject;
-            int value = (Integer) entry.getKey();
-            String romanValue = (String) entry.getValue();
-            remaining = appendRomanNumber(remaining, value, romanValue, strBuilder);
+    public String toRoman(int decimal) {
+        if(digitRomanMap.containsKey(decimal)) {
+            return digitRomanMap.get(decimal);
         }
 
+        for (Map.Entry entry : digitRomanMap.entrySet()) {
+            int key = (Integer) entry.getKey();
+            if(decimal > key)
+                return new RomanNumbers().toRoman(key) + new RomanNumbers().toRoman(decimal - key);
+        }
         return strBuilder.toString();
-    }
-
-    public int appendRomanNumber(int number, int value, String romanDigit, StringBuilder builder) {
-        while(number >= value) {
-            builder.append(romanDigit);
-            number -= value;
-        }
-        return number;
     }
 
 }
