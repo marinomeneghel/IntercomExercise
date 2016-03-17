@@ -16,26 +16,79 @@ public class RomanNumbersTest {
     }
 
     @Test
-    public void testNumbersConversion() {
-        assertEquals("I", romanNumbers.numToRoman(1));
-        assertEquals("II", romanNumbers.numToRoman(2));
-        assertEquals("III", romanNumbers.numToRoman(3));
-        assertEquals("IV", romanNumbers.numToRoman(4));
-        assertEquals("V", romanNumbers.numToRoman(5));
-        assertEquals("VI", romanNumbers.numToRoman(6));
-        assertEquals("VII", romanNumbers.numToRoman(7));
-        assertEquals("VIII", romanNumbers.numToRoman(8));
-        assertEquals("IX", romanNumbers.numToRoman(9));
-        assertEquals("X", romanNumbers.numToRoman(10));
-
-        assertEquals("XX", romanNumbers.numToRoman(20));
-        assertEquals("XL", romanNumbers.numToRoman(40));
-        assertEquals("L", romanNumbers.numToRoman(50));
-        assertEquals("LX", romanNumbers.numToRoman(60));
-
-        assertEquals("MCMXC", romanNumbers.numToRoman(1990));
+    public void testOneIsI() {
+        assertEquals("I", romanNumbers.toRoman(1));
     }
 
+    @Test
+    public void testTwoIsII() {
+        assertEquals("II", romanNumbers.toRoman(2));
+    }
 
+    @Test
+    public void testFourIsIV() {
+        assertEquals("IV", romanNumbers.toRoman(4));
+    }
+
+    @Test
+    public void testFiveIsV() {
+        assertEquals("V", romanNumbers.toRoman(5));
+    }
+
+    @Test
+    public void testSixIsVI() {
+        assertEquals("VI", romanNumbers.toRoman(6));
+    }
+
+    @Test
+    public void testNineIsIX() {
+        assertEquals("IX", romanNumbers.toRoman(9));
+    }
+
+    @Test
+    public void testTenIsX() {
+        assertEquals("X", romanNumbers.toRoman(10));
+    }
+
+    @Test
+    public void testsFortyIsXL() {
+        assertEquals("XL", romanNumbers.toRoman(40));
+    }
+
+    @Test
+    public void testFiftyIsL() {
+        assertEquals("L", romanNumbers.toRoman(50));
+        assertEquals("LX", romanNumbers.toRoman(60));
+    }
+
+    @Test
+    public void testTwentySevenIsXXVII() {
+        assertEquals("XXVII", romanNumbers.toRoman(27));
+    }
+
+    @Test
+    public void testEightyNineIsLXXXIX() {
+        assertEquals("LXXXIX", romanNumbers.toRoman(89));
+    }
+
+    @Test
+    public void testSixHundredNinetyOneIsDCXCI() {
+        assertEquals("DCXCI", romanNumbers.toRoman(691));
+    }
+
+    @Test
+    public void testNineteenEightyThreeIsMCMLXXXIII() {
+        assertEquals("MCMLXXXIII", romanNumbers.toRoman(1983));
+    }
+
+    @Test
+    public void testTwoThousandForHundredAndTwelveIsMMCDXII() {
+        assertEquals("MMCDXII", romanNumbers.toRoman(2412));
+    }
+
+    @Test
+    public void testNineteenNinetyIsMCMXC() {
+        assertEquals("MCMXC", romanNumbers.toRoman(1990));
+    }
 
 }

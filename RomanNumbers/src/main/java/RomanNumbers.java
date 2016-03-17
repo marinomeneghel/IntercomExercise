@@ -1,7 +1,3 @@
-import javafx.util.Pair;
-
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -27,7 +23,7 @@ public class RomanNumbers {
         digitRomanMap.put(1, "I");
     }
 
-    public String numToRoman(int num) {
+    public String toRoman(int num) {
         StringBuilder strBuilder = new StringBuilder();
 
         int remaining = num;
